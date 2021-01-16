@@ -1,0 +1,226 @@
+body{
+    background-color: #FFF;
+    height: 100vh;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.head{
+    margin-bottom: 40px;
+}
+
+h1.countryName{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #efcb43;
+    font-size: 40px;
+    margin: 0 24%;
+    width: 50%;
+}
+
+h1.brand{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.updateTime{
+    text-align: center;
+    font-size: 14px;
+}
+
+form input{
+
+    
+    position: relative;
+    width: 580px;
+    padding: 20px;
+    height: 100px;
+    margin: 40px;
+    border: none;
+    box-shadow: -4px 14px 24px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    outline: none;
+}
+
+::placeholder{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+
+.leftBox{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+.rightBox{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+
+
+
+.card{
+    position: relative;
+
+    width: 160px;
+    padding: 20px;
+    height: 170px;
+    margin: 40px;
+    border: none;
+    box-shadow: -4px 14px 24px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    font-weight: bolder;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+    box-shadow: -4px 14px 24px 1px rgba(0, 0, 0, 0.4);
+}
+
+table{
+    border-spacing: 8px 11px;
+}
+
+tr.heading th{
+    background-color: #e3f864;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 8px;
+    font-weight: 900;
+    color:  #5e5d5d;
+    font-size: 20px;
+
+}
+
+td{
+    margin: 2px;
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: #f1f3f4;
+    padding: 14px;
+    color:  #5e5d5d;
+}
+
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type = search]{
+    font-size: 32px;
+    color: grey;
+}
+
+.last{
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-div{
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+
+.footer-content{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 40px auto;
+    width: 33.3%;
+}
+
+@media only screen and (max-width: 1280px){
+    .box{
+        position: relative;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .leftBox{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    
+    .rightBox{
+        position: relative;
+        width: 100%;
+    }
+
+    .cardHolder{
+        width: 90%;
+        padding: 40px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .card{
+        position: relative;
+
+
+        width: 140px;
+        padding: 20px;
+        height: 170px;
+        margin: 3%;
+        border: none;
+        box-shadow: -4px 14px 24px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        display: inline-block;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+        font-weight: bolder;
+        top: 1px;
+    }
+
+    .footer-div{
+        position: relative;
+        display: block;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    form input{
+        position: relative;
+        width: 380px;
+        padding: 20px;
+        height: 60px;
+        margin: 40px;
+        border: none;
+        box-shadow: -4px 14px 24px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        outline: none;
+    }
+    
+    ::placeholder{
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.2);
+    }
+
+    .cardHolder{
+        width: 90%;
+        padding: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,82 @@
+<%- include('header') -%>
+
+
+<div class="head">
+    <h1 class="brand"><span style="color:  #f93b3b;">Covid-19</span> India</h1>
+
+    <h1 class="countryName"><span style="color:  #96917e; font-size: 48px; font-weight: 900;">I</span>NDIA</h1>
+</div>
+
+<h2 class="updateTime"> Updated on: <%= time %> </h2>
+
+<div class="box">
+<div class="leftBox">
+    <form class="d-flex search-option" action="/" method="POST">
+        <label for="search" style="color: rgba(0, 0, 0, 0.4); margin: 40px;">Search your state-wise</label><br>
+        <input class="search" type="search" name="srch" placeholder="Search">
+    </form>
+    <table>
+        <tr class="heading">
+            <th>STATE</th>
+            <th>CONFIRMED</th> 
+            <th>DECEASED</th>
+            <th>RECOVERED</th>
+            <th>TESTED</th>
+        </tr>
+          <% for(var i=0; i < arr.length; i++){ %>
+            <% if(arr[i].stateCode === 'TT'){ %>
+
+            <% } else { %>
+                <tr>
+                    <td> <%= arr[i].stateName %> </td>
+                    <td style="color: #ad7cee;"> <%= arr[i].confirmed%> </td>
+                    <td style="color: #76bef8;"> <%= arr[i].deceased %> </td>
+                    <td style="color: #5fef49;"> <%= arr[i].recovered %> </td>
+                    <td style="color: #f8c364;"> <%= arr[i].tested %> </td>
+                </tr>       
+            <% } %>
+          <% } %>
+    </table>
+
+</div>
+
+<div class="rightBox">
+    <h2>TOTAL COUNTRY DATA</h2>
+    <div class="cardHolder">
+        <div class="card" style="color:  #76bef8;">
+            <h2>Active case</h2>        
+            <p> <%= indiArr[0].inActive %> </p>
+        </div>
+        <div class="card" style="color:  #ad7cee;">  
+            <h2>Confirmed case</h2>      
+            <p> <%= indiArr[0].inConfirmed %> </p>
+        </div>
+        <div class="card" style="color: #fb6152;">  
+            <h2>Deaths</h2>      
+            <p> <%= indiArr[0].inDeaths %> </p>
+        </div>
+        <div class="card" style="color:  #5fef49;">
+            <h2>Recovered</h2>        
+            <p> <%= indiArr[0].inRecovered %> </p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer-div">
+    <div class="footer-content">
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">    
+            <img src="https://www.freelogovectors.net/wp-content/uploads/2016/12/who-logo-world-health-organization-logo.png" alt="AAAAAAAAAAA" style="width: 160px; height: 160px;">
+        </a>    
+    </div>
+    <div class="footer-content"
+        <a href="https://www.icmr.gov.in/">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Indian_Council_of_Medical_Research_Logo.svg/220px-Indian_Council_of_Medical_Research_Logo.svg.png" alt="" style="width: 160px; height: 80px; top: 40px; position: relative;">
+        </a>
+    </div>
+    <div class="footer-content">
+        <p style="margin-bottom: 0; font-weight: bolder;">Surya Dana</p>
+        <a href="https://www.linkedin.com/in/surya-dana-4787271b1/"><img src="https://ox-prod.imgix.net/uploads/2017/04/linkedin_logo.jpg?auto=compress" alt="" style="width: 100px; height: 100px;"></a>
+    </div>
+</div>
+
+<%- include('footer') -%>

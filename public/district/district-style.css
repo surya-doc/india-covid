@@ -1,0 +1,75 @@
+body{
+    background-color: #FFF;
+    height: 100vh;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.head{
+    margin-bottom: 40px;
+}
+
+h1.countryName{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color:  #efcb43;
+    font-size: 40px;
+    margin: 0 24%;
+}
+
+h1.brand{
+    position: relative;
+    display: inline-block;
+}
+
+.leftBox{
+    margin: 0 auto;
+}
+
+table{
+    border-spacing: 8px 11px;
+}
+
+tr.heading th{
+    background-color:   #e3f864;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 8px;
+    font-weight: 900;
+    color: grey;
+
+}
+
+td{
+    margin: 2px;
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: #f1f3f4;
+    padding: 14px;
+}
+
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.last{
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-div{
+    width: 100%;
+    background-color: grey;
+}
+
+.footer-content{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
